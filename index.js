@@ -36,3 +36,9 @@ function removeLastKitten(element) {
   newArray.pop(element);
   return newArray;
 }
+
+function removeFirstKitten(element) {
+  var newArray = [...kittens];
+  newArray.shift(element);
+  return newArray;
+}
