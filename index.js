@@ -23,3 +23,9 @@ function appendKitten(element) {
   newArray.push(element);
   return newArray;
 }
+
+function appendKitten(element) {
+  var newArray = [...kittens];
+  newArray.unshift(element);
+  return newArray;
+}
