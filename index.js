@@ -27,12 +27,12 @@ function appendKitten(element) {
 
 function prependKitten(element) {
   var newArray = [...kittens];
-  newArray.pop(element);
+  newArray.unshift(element);
   return newArray;
 }
 
 function removeLastKitten(element) {
   var newArray = [...kittens];
-  newArray.unshift(element);
+  newArray.pop(element);
   return newArray;
 }
